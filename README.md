@@ -1,7 +1,3 @@
 # Network
 
-this is the readme
-
-123
-
-456
+Network test project
