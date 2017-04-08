@@ -1,3 +1,3 @@
 # Network
 
-Network test project
+Network project for study java
