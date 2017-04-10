@@ -18,7 +18,7 @@ public class ComponentTest {
 class SecondFrame extends JFrame{
     public SecondFrame(){
         add(new TestComponent());
-//        add(new TestComponent2("Component2",500,100,600,600));
+        //add(new TestComponent2("Component2",310,210,600,400));
         pack();
 
     }
@@ -33,9 +33,12 @@ class TestComponent extends JComponent{
     public static final int DEFAULT_HEIGHT = 200;
 
     public void paintComponent(Graphics g){
+        this.setBackground(Color.green);
+        g.setColor(Color.red);
         g.drawString("---==== Сообщение ====---",MESSAGE_X,MESSAGE_Y);
         g.drawString("---==== Сообщение 2 ====---",MESSAGE_X,MESSAGE_Y+20);
         g.drawString("---==== Сообщение 3 ====---",MESSAGE_X,MESSAGE_Y+40);
+
     }
 
 
