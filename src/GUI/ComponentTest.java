@@ -46,6 +46,8 @@ class TestComponent extends JComponent{
 
 }
 
+
+
 class TestComponent2 extends JComponent{
     public int message_x;
     public int message_y;
