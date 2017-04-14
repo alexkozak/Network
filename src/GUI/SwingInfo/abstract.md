@@ -6,4 +6,6 @@ setResizable(false)  - запрет изменения размероф фрей
 setIconImage(new ImageIcon("src\\GUI\\logo.png").getImage()) - установить логотип
 перерисовка (кога дойдет дело) - стр 497
 при наложении компоненты перекрывают (закрывают) друг друга
+!!! exitButton.addActionListener(e -> System.exit(0)) - пример лямбды
+
 
