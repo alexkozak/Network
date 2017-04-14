@@ -5,6 +5,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class ButtonFrame extends JFrame
 {
@@ -18,7 +20,7 @@ public class ButtonFrame extends JFrame
         JButton yellowButton = new JButton("Yellow");
         JButton blueButton = new JButton("Blue");
         JButton redButton = new JButton("Red");
-        JButton exitButton = new JButton("Exit");
+        JButton exitButton = new JButton("Exit with sleep time");
 
         buttonPanel = new JPanel();
 
@@ -36,7 +38,26 @@ public class ButtonFrame extends JFrame
         yellowButton.addActionListener(yellowAction);
         blueButton.addActionListener(blueAction);
         redButton.addActionListener(e -> buttonPanel.setBackground(Color.RED));
-        exitButton.addActionListener(e -> System.exit(0));
+        exitButton.addActionListener(e ->{
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e1) {
+                e1.printStackTrace();
+            }
+            System.exit(0);
+                });
+
+        this.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.out.println("фрейм закрыт");
+            }
+
+            @Override
+            public void windowIconified(WindowEvent e) {
+                System.out.println("фрейм свернут");
+            }
+        });
 
     }
 
@@ -46,9 +67,6 @@ public class ButtonFrame extends JFrame
         public ColorAction(Color c){
             backgroundColor = c;
         }
-
-
-
 
         @Override
         public void actionPerformed(ActionEvent e) {

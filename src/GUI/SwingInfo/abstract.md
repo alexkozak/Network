@@ -7,5 +7,17 @@ setIconImage(new ImageIcon("src\\GUI\\logo.png").getImage()) - установи�
 перерисовка (кога дойдет дело) - стр 497
 при наложении компоненты перекрывают (закрывают) друг друга
 !!! exitButton.addActionListener(e -> System.exit(0)) - пример лямбды
+пример анонимного внутреннего класса
+this.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.out.println("фрейм закрыт");
+            }
+
+            @Override
+            public void windowIconified(WindowEvent e) {
+                System.out.println("фрейм свернут");
+            }
+        });
 
 
