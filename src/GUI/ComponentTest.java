@@ -21,7 +21,6 @@ class SecondFrame extends JFrame {
 //        add(new TestComponent());
         add(new ImageComponent());
 
-
         pack();
 
     }
