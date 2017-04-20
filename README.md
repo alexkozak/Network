@@ -2,4 +2,4 @@
 
 Network project for java study 
 
-изменения с сайта
+work from PC
