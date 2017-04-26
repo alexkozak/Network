@@ -15,9 +15,9 @@ public class ActionFrame extends JFrame {
         buttonPanel = new JPanel();
 
         //  определить действия
-        Action yellowAction = new ColorAction("Yellow",new ImageIcon("src\\GUI\\img\\yellow-ball.png"), Color.YELLOW);
-        Action redAction = new ColorAction("Red", new ImageIcon("src\\GUI\\img\\red-ball.png"), Color.RED);
-        Action blueAction = new ColorAction("Blue", new ImageIcon("src\\GUI\\img\\blue-ball.png"), Color.BLUE);
+        Action yellowAction = new ColorAction("Yellow_1",new ImageIcon("src\\GUI\\img\\yellow-ball.png"), Color.YELLOW);
+        Action redAction = new ColorAction("Red_2", new ImageIcon("src\\GUI\\img\\red-ball.png"), Color.RED);
+        Action blueAction = new ColorAction("Blue_3", new ImageIcon("src\\GUI\\img\\blue-ball.png"), Color.BLUE);
 
         buttonPanel.add(new JButton(yellowAction));
         buttonPanel.add(new JButton(blueAction));
@@ -25,7 +25,7 @@ public class ActionFrame extends JFrame {
 
         add(buttonPanel);
 
-        //привязка клавишь
+        //привязка клавиш
         InputMap imap = buttonPanel.getInputMap(JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
         imap.put(KeyStroke.getKeyStroke("ctrl Y"), "panel.yellow");
         imap.put(KeyStroke.getKeyStroke("ctrl B"), "panel.blue");
@@ -60,7 +60,7 @@ public class ActionFrame extends JFrame {
     }
 }
 
-class PannelManager{
+class PanelManager {
     public static void main(String[] args) {
         EventQueue.invokeLater(()->
         {
