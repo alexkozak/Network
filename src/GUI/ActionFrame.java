@@ -33,9 +33,9 @@ public class ActionFrame extends JFrame {
 
         //привязать надписи на кнопках панели к действиям
         ActionMap amap = buttonPanel.getActionMap();
-        amap.put("panel yellow", yellowAction);
-        amap.put("panel blue", blueAction);
-        amap.put("panel red", redAction);
+        amap.put("panel.yellow", yellowAction);
+        amap.put("panel.blue", blueAction);
+        amap.put("panel.red", redAction);
 
     }
 
