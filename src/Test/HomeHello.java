@@ -1,9 +1,10 @@
 package Test;
 
 
-public class HomeHello {
+public class HomeHello extends Parent {
 
     public static void main(String[] args) {
-        System.out.println("Hello from home 2");
+        HomeHello homeHello = new HomeHello();
+        homeHello.printInfo("123","555");
     }
 }

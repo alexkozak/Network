@@ -4,6 +4,7 @@ component, window - медоты изменения размеров фрейм�
 setExtendedState(Frame.MAXIMIZED_BOTH) - фрейм с максимальными размрами
 setResizable(false)  - запрет изменения размероф фрейма
 setIconImage(new ImageIcon("src\\GUI\\logo.png").getImage()) - установить логотип
+кнопка.setEnable(false) - замораживает кнопку 
 перерисовка (кога дойдет дело) - стр 497
 
 есть 2 варианта добавления действия к кнопке:
@@ -12,6 +13,7 @@ setIconImage(new ImageIcon("src\\GUI\\logo.png").getImage()) - установи�
 
 при наложении компоненты перекрывают (закрывают) друг друга
 !!! exitButton.addActionListener(e -> System.exit(0)) - пример лямбды
+
 пример анонимного внутреннего класса
 this.addWindowListener(new WindowAdapter() {
             @Override
@@ -24,6 +26,7 @@ this.addWindowListener(new WindowAdapter() {
                 System.out.println("фрейм свернут");
             }
         });
+
 пример привязки клавишь
 //привязка клавиш
         InputMap imap = buttonPanel.getInputMap(JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);

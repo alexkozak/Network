@@ -3,6 +3,7 @@ package GUI;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class ActionFrame extends JFrame {
 
@@ -10,12 +11,12 @@ public class ActionFrame extends JFrame {
     public static final int DEFAULT_WIDTH = 300;
     public static final int DEFAULT_HEIGHT = 200;
 
-    public ActionFrame(){
-        setSize(DEFAULT_WIDTH,DEFAULT_HEIGHT);
+    public ActionFrame() {
+        setSize(DEFAULT_WIDTH, DEFAULT_HEIGHT);
         buttonPanel = new JPanel();
 
         //  определить действия
-        Action yellowAction = new ColorAction("Yellow_1",new ImageIcon("src\\GUI\\img\\yellow-ball.png"), Color.YELLOW);
+        Action yellowAction = new ColorAction("Yellow_1", new ImageIcon("src\\GUI\\img\\yellow-ball.png"), Color.YELLOW);
         Action redAction = new ColorAction("Red_2", new ImageIcon("src\\GUI\\img\\red-ball.png"), Color.RED);
         Action blueAction = new ColorAction("Blue_3", new ImageIcon("src\\GUI\\img\\blue-ball.png"), Color.BLUE);
 
@@ -43,13 +44,13 @@ public class ActionFrame extends JFrame {
 
 
 
-    public class ColorAction extends AbstractAction{
+    public class ColorAction extends AbstractAction {
 
-        ColorAction(String name, Icon icon, Color c){
+        ColorAction(String name, Icon icon, Color c) {
             putValue(Action.NAME, name);
-            putValue(Action.SMALL_ICON,icon);
-            putValue(Action.SHORT_DESCRIPTION,"Set panel to "+name.toLowerCase());
-            putValue("color",c);
+            putValue(Action.SMALL_ICON, icon);
+            putValue(Action.SHORT_DESCRIPTION, "Set panel to " + name.toLowerCase());
+            putValue("color", c);
         }
 
         @Override
@@ -62,7 +63,7 @@ public class ActionFrame extends JFrame {
 
 class PanelManager {
     public static void main(String[] args) {
-        EventQueue.invokeLater(()->
+        EventQueue.invokeLater(() ->
         {
             ActionFrame frame = new ActionFrame();
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
