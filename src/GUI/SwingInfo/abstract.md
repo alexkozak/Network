@@ -39,5 +39,12 @@ this.addWindowListener(new WindowAdapter() {
         amap.put("panel.yellow", yellowAction);
         amap.put("panel.blue", blueAction);
         amap.put("panel.red", redAction);
+        
+существуюют книги по шаблонам проектирования:
+1. пример объектно-ориентированого проектирования. Паттерны проектирования 2007г
+2. система шаблонов 1996г
+ссылка их хорстмана стр 561
+
+
 
 

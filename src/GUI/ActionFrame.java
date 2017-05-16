@@ -37,7 +37,6 @@ public class ActionFrame extends JFrame {
         amap.put("panel.yellow", yellowAction);
         amap.put("panel.blue", blueAction);
         amap.put("panel.red", redAction);
-
     }
 
 
