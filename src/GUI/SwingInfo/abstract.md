@@ -45,6 +45,11 @@ this.addWindowListener(new WindowAdapter() {
 2. система шаблонов 1996г
 ссылка их хорстмана стр 561
 
+изучить применение интерфейса ButtonModel стр 565
+
+TODO прочитать про Serializable в java и вернуться к описанию Serializable в java.awt.Component
+ 
+
 
 
 

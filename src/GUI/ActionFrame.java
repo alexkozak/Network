@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.Serializable;
 
 public class ActionFrame extends JFrame {
 
@@ -26,6 +27,7 @@ public class ActionFrame extends JFrame {
 
         add(buttonPanel);
 
+
         //привязка клавиш
         InputMap imap = buttonPanel.getInputMap(JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
         imap.put(KeyStroke.getKeyStroke("ctrl Y"), "panel.yellow");
@@ -43,7 +45,7 @@ public class ActionFrame extends JFrame {
 
 
 
-    public class ColorAction extends AbstractAction {
+    public class ColorAction extends AbstractAction  {
 
         ColorAction(String name, Icon icon, Color c) {
             putValue(Action.NAME, name);
@@ -51,6 +53,7 @@ public class ActionFrame extends JFrame {
             putValue(Action.SHORT_DESCRIPTION, "Set panel to " + name.toLowerCase());
             putValue("color", c);
         }
+
 
         @Override
         public void actionPerformed(ActionEvent e) {
