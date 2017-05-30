@@ -49,6 +49,7 @@ this.addWindowListener(new WindowAdapter() {
 
 TODO прочитать про Serializable в java и вернуться к описанию Serializable в java.awt.Component
  
+у каждого контейнера имеется свой диспетчер компоновки
 
 
 
