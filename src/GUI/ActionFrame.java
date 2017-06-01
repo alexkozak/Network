@@ -25,7 +25,7 @@ public class ActionFrame extends JFrame {
         buttonPanel.add(new JButton(blueAction));
         buttonPanel.add(new JButton(redAction));
 
-        add(buttonPanel);
+        add(buttonPanel, BorderLayout.SOUTH);
 
 
         //привязка клавиш
