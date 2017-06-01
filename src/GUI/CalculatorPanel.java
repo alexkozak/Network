@@ -15,6 +15,7 @@ public class CalculatorPanel extends JPanel
     private String lastCommand;
     private boolean start;
 
+
     public CalculatorPanel()
     {
         setLayout(new BorderLayout());
