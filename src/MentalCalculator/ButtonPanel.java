@@ -31,7 +31,7 @@ public class ButtonPanel extends JFrame {
 
     boolean getResult =false;
 
-    Taskmanager taskmanager = new Taskmanager(1,2);
+    Taskmanager taskmanager = new Taskmanager(2,1);
 
 
     public ButtonPanel() {
@@ -87,7 +87,7 @@ public class ButtonPanel extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 getResult = true;
-                taskButton.setText("result: "+taskmanager.getResult());
+                taskButton.setText(taskmanager.getResult());
 
                 button0.setEnabled(false);
                 button1.setEnabled(false);

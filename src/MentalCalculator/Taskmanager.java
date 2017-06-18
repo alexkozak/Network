@@ -140,7 +140,7 @@ public class Taskmanager {
     }
 
     String getResult() {
-        return "correct: " + cAnswers + "     fault: " + fAnswers;
+        return "correct: " + cAnswers + " fault: " + fAnswers;
     }
 
     void newGame() {
